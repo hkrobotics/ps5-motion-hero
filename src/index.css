@@ -1,0 +1,75 @@
+:root {
+  --bg: #dee0ec;
+  --text: rgba(17, 24, 39, 0.8);
+  --text-h: #111827;
+  --accent: #2456d3;
+  --sans:
+    'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --mono:
+    'SFMono-Regular', 'SF Mono', 'Roboto Mono', Consolas, 'Liberation Mono',
+    monospace;
+
+  color: var(--text);
+  background: var(--bg);
+  font: 400 18px/1.55 var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #dee0ec;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: var(--text-h);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+}
+
+h1 {
+  font-size: clamp(3.2rem, 8vw, 6.5rem);
+  max-width: 10ch;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  padding: 0.16rem 0.42rem;
+  border-radius: 0.45rem;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--text-h);
+  font: 0.92em/1.2 var(--mono);
+}
+
+@media (max-width: 900px) {
+  :root {
+    font-size: 16px;
+  }
+}
