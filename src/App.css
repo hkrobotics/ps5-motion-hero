@@ -32,6 +32,7 @@
 
 .section-copy {
   max-width: 42rem;
+  text-wrap: balance;
 }
 
 .eyebrow {
@@ -162,24 +163,79 @@ code {
   .title-section,
   .section-intro,
   .footer-section {
-    width: calc(100vw - 1.5rem);
+    width: min(100%, calc(100vw - 1.5rem));
   }
 
   .title-section,
   .footer-section {
-    padding: 4.5rem 0;
+    padding: 4.25rem 0;
   }
 
   .section-intro {
-    padding: 2rem 0 3rem;
+    gap: 1rem;
+    padding: 1.75rem 0 2.75rem;
   }
 
   .hero-section {
-    height: 280vh;
+    height: 240vh;
   }
 
   .eagle-section {
-    height: 320vh;
+    height: 260vh;
+  }
+
+  .sequence-sticky {
+    min-height: 100dvh;
+    padding: 1rem 0;
+  }
+
+  .canvas-frame,
+  .eagle-frame {
+    width: calc(100vw - 1rem);
+    max-width: 42rem;
+    border-radius: 24px;
+  }
+
+  .canvas-frame {
+    aspect-ratio: 4 / 3;
+  }
+
+  .eagle-frame {
+    aspect-ratio: 4 / 5;
+  }
+
+  .eagle-stage {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .title-section,
+  .section-intro,
+  .footer-section {
+    width: calc(100vw - 1rem);
+  }
+
+  .title-section,
+  .footer-section {
+    padding: 3.5rem 0;
+  }
+
+  .section-intro {
+    padding: 1.5rem 0 2.25rem;
+  }
+
+  .eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+  }
+
+  .hero-section {
+    height: 205vh;
+  }
+
+  .eagle-section {
+    height: 220vh;
   }
 
   .sequence-sticky {
@@ -188,7 +244,36 @@ code {
 
   .canvas-frame,
   .eagle-frame {
-    width: calc(100vw - 1rem);
-    border-radius: 24px;
+    width: calc(100vw - 0.75rem);
+    border-radius: 18px;
+  }
+
+  .canvas-frame {
+    aspect-ratio: 1 / 1;
+  }
+
+  .eagle-frame {
+    aspect-ratio: 10 / 13;
+  }
+}
+
+@media (max-width: 420px) {
+  .title-section,
+  .footer-section {
+    padding: 3rem 0;
+  }
+
+  .hero-section {
+    height: 190vh;
+  }
+
+  .eagle-section {
+    height: 205vh;
+  }
+
+  .canvas-frame,
+  .eagle-frame {
+    width: calc(100vw - 0.5rem);
+    border-radius: 16px;
   }
 }

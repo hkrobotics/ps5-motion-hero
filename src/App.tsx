@@ -285,9 +285,8 @@ function App() {
       <footer className="footer-section">
         <p className="eyebrow">Footer</p>
         <p className="section-copy">
-          Built as a motion showcase for hiring managers and collaborators who
-          want to see scroll-driven interaction design executed with production
-          code instead of mockups.
+          A focused motion showcase built around sticky scenes, scroll-linked
+          sequences, and layered visual composition.
         </p>
       </footer>
     </main>
